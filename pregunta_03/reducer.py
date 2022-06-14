@@ -9,10 +9,10 @@ if __name__ == '__main__':
 
     for line in sys.stdin:
 
-        value.append(int(line.split("\t")[1]))
+        value.append(line.split("\t")[1])
         ky.append(line.split("\t")[0])
 
-    ky_value = zip(ky, value)
+    ky_value = zip(ky, int(value))
     
     ky_value.sort(key=lambda x:x[1])
     
