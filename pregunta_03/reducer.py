@@ -9,8 +9,8 @@ if __name__ == '__main__':
 
     for line in sys.stdin:
 
-        value.append(int(line.split("\n")[1]))
-        ky.append(line.split("\n")[0])
+        value.append(int(line.split("\t")[1]))
+        ky.append(line.split("\t")[0])
 
     ky_value = zip(ky, value)
     
