@@ -10,16 +10,13 @@ if __name__ == '__main__':
     for line in sys.stdin:
        num, letters = line.split('\t')
        num = int(num)
+       letters = letters.strip() 
        letters = letters.split(',')
-
        for x in letters:
-         
          if x in dicty.keys():
            dicty[x].append(num)
          else:
            dicty[x] = [num]
-
-    #sortedDict = OrderedDict(sorted(dicty.items(), key=lambda x: x[1]))
 
 
     for ky in sorted(dicty.keys()):
