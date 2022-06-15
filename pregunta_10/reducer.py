@@ -22,4 +22,4 @@ if __name__ == '__main__':
     for ky in sorted(dicty.keys()):
       nums = sorted(dicty[ky])
       final_nums = ",".join([str(value) for value in nums])
-      sys.stdout.write("{}\t{}\n".format(ky,nums))
+      sys.stdout.write("{}\t{}\n".format(ky,final_nums))
