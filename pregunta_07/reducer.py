@@ -18,4 +18,4 @@ if __name__ == '__main__':
     ky_value_2 = sorted(ky_value,key=lambda x:(x[0],x[2]))
 
     for letter, date, num in ky_value_2:
-      sys.stdout.write("{}\t{}\t{}\n".format(letter, date, num))
+      sys.stdout.write("{}   {}   {}\n".format(letter, date, num))
